@@ -11,7 +11,7 @@ https://docs.google.com/document/d/1XtC1P3g43PdseKp2Os_w9J_onHa0W5Kna0IbsMD561c/
 
 * Розгортаємо локальну копію проекта
 ```
-git clone 
+git clone https://github.com/gutormant/is-delivery.git
 ```
 * Переходимо в папку проекта
 ```
