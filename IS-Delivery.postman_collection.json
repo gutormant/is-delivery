@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "6ea865be-bab3-477d-af57-1b502438d48f",
+		"name": "IS-Delivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4461723"
+	},
+	"item": [
+		{
+			"name": "Parcel info send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"William\",\n    \"middle_name\": \"Sherlock\",\n    \"last_name\": \"Holmes\",\n    \"email\": \"wssh64987634@gmail.com\",\n    \"address\": \"221B Baker St, London NW1 6XE, Great Britain\",\n    \"phone\": \"442072243688\",\n    \"width\": 200,\n    \"height\": 300,\n    \"depth\": 400,\n    \"weight\": 500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/send",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nova Post test receiver",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"bsbsdb\",\n    \"middle_name\": \"gsdfsdfsf\",\n    \"last_name\": \"bstnsrttsrt\",\n    \"email\": \"gsdfsdfsf@adgada.com\",\n    \"address\": \"gsdfsdfsf\",\n    \"phone\": \"3809578554\",\n    \"width\": 200,\n    \"height\": 300,\n    \"depth\": 400,\n    \"weight\": 500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/nova-post-receiver",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"nova-post-receiver"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
